@@ -1,14 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import { Navegation } from './nav/navegation';
+import "./App.css";
+import { Navegation } from "./nav/navegation";
 
 function App() {
   return (
     <>
-        <Navegation/>
-    
+      <Navegation />
     </>
   );
 }
-
-export default App;
