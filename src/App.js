@@ -1,7 +1,6 @@
-import "./App.css";
 import { Navegation } from "./nav/navegation";
 
-function App() {
+export default function App() {
   return (
     <>
       <Navegation />
