@@ -1,12 +1,16 @@
-import '../css/nav.css' 
- 
- function Home(){
+import FileUpload from "../antivirus/fileUpload";
+
+
+import "../css/nav.css";
+
+function Home() {
   return (
     <div className="content">
-      <h1>Home</h1>
+      <h1>Analizar archivo</h1>
+
+      <FileUpload />
     </div>
   );
-};
-
+}
 
 export default Home;

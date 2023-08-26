@@ -8,20 +8,24 @@ import {
 import About from "./init/About";
 import Home from "./init/Home";
 import Tools from "./init/Tools";
+import Principal from "./init/Principal";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <ul className="nav-list">
+        <ul className="nav-list ">
           <li>
-            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/home" className="nav-link">Home</Link>
           </li>
           <li>
-            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/" className="nav-link">Scanear Archivo</Link>
           </li>
           <li>
-            <Link to="/tools" className="nav-link">Tools</Link>
+            <Link to="/tools" className="nav-link">Scanear URL</Link>
+          </li>
+          <li>
+            <Link to="/about" className="nav-link">About us</Link>
           </li>
         </ul>
 
@@ -30,6 +34,9 @@ export default function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/home">
+            <Principal />
           </Route>
           <Route path="/about">
             <About />
